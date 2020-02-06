@@ -18,6 +18,14 @@
         <java.version>1.8</java.version>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>huaweicloud</id>
+            <url>https://repo.huaweicloud.com/repository/maven/</url>
+        </repository>
+    </repositories>
+
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
