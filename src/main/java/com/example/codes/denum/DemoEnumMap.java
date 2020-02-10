@@ -1,8 +1,7 @@
-package com.example.codes;
+package com.example.codes.denum;
 
 import java.util.EnumMap;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * @Author: LZ

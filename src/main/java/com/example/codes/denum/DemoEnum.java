@@ -1,4 +1,4 @@
-package com.example.codes;
+package com.example.codes.denum;
 
 /**
  * @Author: LZ
