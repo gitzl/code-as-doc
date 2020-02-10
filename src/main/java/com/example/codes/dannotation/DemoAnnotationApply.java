@@ -22,7 +22,9 @@ public class DemoAnnotationApply {
      *
      */
 
-
+    /****
+     *  反射调用方法声明了注解：DemoAnnotation
+     */
     public void  apply() {
         Class<?> target = DemoTarget.class;
         Method[] declaredMethods = target.getDeclaredMethods();
