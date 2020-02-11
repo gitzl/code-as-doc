@@ -20,4 +20,5 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 public @interface DemoAnnotation {
+    String desc() default "demo annotation";
 }

@@ -33,10 +33,11 @@ public class DemoAnnotationApply {
                 try {
                     //调用标注了注解：DemoAnnotation 的方法
                     declaredMethod.invoke(new DemoTarget(), "apply annotation");
+                    String desc = declaredMethod.getAnnotation(DemoAnnotation.class).desc();
+                    System.out.println("demo annotation values desc is :" + desc);
                 } catch (IllegalAccessException e) {
                     e.printStackTrace();
                 } catch (InvocationTargetException e) {
-                    e.printStackTrace();
                 }
             }
         }

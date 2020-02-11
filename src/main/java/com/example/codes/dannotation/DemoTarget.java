@@ -6,9 +6,9 @@ package com.example.codes.dannotation;
  */
 public class DemoTarget {
 
-    @DemoAnnotation
+    @DemoAnnotation(desc = "desc demo annotation")
     public void doSomeThing(String label) {
-        System.out.println("方法中标注：DemoAnnotation注解 : " + label);
+        System.out.println("方法中标注：DemoAnnotation注解 : " + label );
     }
 
 
