@@ -16,6 +16,7 @@ public class DemoEnumMap {
         for (DemoEnum demoEnum : DemoEnum.values()) {
             demoEnumSetMap.put(demoEnum, demoEnum.getDesc());
         }
+
         System.out.println(demoEnumSetMap);
     }
 

@@ -1,16 +1,15 @@
 package com.example.codes.dmethod;
 
+import org.apache.logging.log4j.util.Strings;
+
 import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 /**
  * @Author: LZ
  * @Date: 2020/2/13 10:18 上午
  */
 public class DemoMethod {
-
 
     /**
      * 写一个方法应该考虑都点
