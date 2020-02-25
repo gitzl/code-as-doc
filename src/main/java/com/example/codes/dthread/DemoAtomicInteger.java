@@ -8,8 +8,18 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class DemoAtomicInteger implements  Runnable {
 
+    /*****
+     * 锁：独占锁和共享锁  公平锁（FIFO 先来先得）和非公平
+     * 锁：主要提供2个功能：互斥  可见
+     *
+     *
+     *
+     *
+     *
+     */
 
-     private static int count = 0;
+    private static int count = 0;
+     //synchronized 独占锁
      protected  synchronized void increment() {
          for (int i = 0; i <10000 ; i++) {
              count ++;
