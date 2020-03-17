@@ -6,8 +6,8 @@ package com.example.codes.dthread;
  */
 public class DemoVolatile {
 
-//     volatile boolean flag = false;
-    boolean flag = false;
+     volatile boolean flag = false;
+//    boolean flag = false;
     protected void doSomething() {
         while (!flag) {
             System.out.println("do something ing.......");
@@ -21,7 +21,7 @@ public class DemoVolatile {
 
 
     // 不加volatile 出现死循环， thread1改变了变量，但是thread不可见
-    // 可使用 volatile 关键字实现多线程直接 变量可见等
+    // 可使用 volatile 让线程之间变量可见
     public static void main(String[] args) throws InterruptedException {
         DemoVolatile demoVolatile = new DemoVolatile();
         Thread thread = new Thread(()->demoVolatile.doSomething());

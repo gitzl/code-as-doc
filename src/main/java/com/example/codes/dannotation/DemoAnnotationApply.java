@@ -17,7 +17,7 @@ public class DemoAnnotationApply {
      * 获取class 三种方式：
      *         DemoTarget demoTarget = new DemoTarget();
      *         1：  Class<? extends DemoTarget> demoTargetClass = demoTarget.getClass();
-     *         2：  Class<?> demoTarget1 = Class.forName("DemoTarget");
+     *         2：  Class<?> demoTarget1 = Class.forName("DemoTarget"); // 加载class 到jvm 同时执行static代码
      *         3：  Class<?> target = DemoTarget.class;
      *
      */
