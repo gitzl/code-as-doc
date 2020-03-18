@@ -54,12 +54,18 @@ public class DemoList {
     }
 
 
+    public void testReduce() {
+        Integer result = users.stream().reduce(0, (partialAgeResult, user) -> partialAgeResult + user.getAge(), Integer::sum);
+        System.out.println("the reduce result is :" + result);
+    }
+
 
     public static void main(String[] args) {
         DemoList demoList = new DemoList();
-//        demoList.testFilter();
+//        demoList.testFilter();in
 //        demoList.testMap();
-        demoList.testList2Map();
+//        demoList.testList2Map();
+        demoList.testReduce();
     }
 
 
